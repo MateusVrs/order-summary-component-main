@@ -12,6 +12,7 @@
     --plan-color-bg: hsl(225, 100%, 98%);
     --background-color: hsl(225, 100%, 94%);
     --main-purple: hsl(245, 75%, 52%);
+    --main-pale-purple: hsl(245, 70%, 60%);
 }
 
 body, html {
@@ -108,6 +109,10 @@ h1, h2 {
     font-size: 14px;
 }
 
+.plan a:hover {
+    text-decoration: none;
+}
+
 .buttons {
     display: flex;
     flex-direction: column;
@@ -131,6 +136,10 @@ h1, h2 {
     border: 0px;
 }
 
+#payment-btn:hover {
+    background-color: var(--main-pale-purple);
+}
+
 #payment-btn:active {
     box-shadow: 0px 15px 8px 0px hsla(245, 75%, 52%, 0.15);
 }
@@ -139,6 +148,10 @@ h1, h2 {
     color: var(--paragraph-color);
     background-color: white;
     border: none;
+}
+
+#cancel-btn:hover {
+    color: hsl(0, 0%, 20%);
 }
 
 footer {
